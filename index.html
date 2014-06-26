@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+		<title>SAM HART</title>
+
+	 	<link href="./hxrts_files/fonts.css" rel="stylesheet" type="text/css">
+	 	<link href="./hxrts_files/style.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="./hxrts_files/jquery-1.6.4.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="./hxrts_files/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./hxrts_files/result-light.css">
+
+		<script type="text/javascript" src="./hxrts_files/jquery.gal.js"></script>
+		<link rel="stylesheet" type="text/css" href="./hxrts_files/theme_sa.css">
+
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-33550677-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+		<script type="text/javascript">//<![CDATA[ 
+
+
+			$(window).load(function(){
+				var topRange = 200, // measure from the top of the viewport to X pixels down
+			    	edgeMargin = 20, // margin above the top or margin from the end of the page
+			    	animationTime = 400, // time in milliseconds
+			    	contentTop = [];
+
+
+			$(document).ready(function () {
+			    // Stop animated scroll if the user does something
+			    $('html,body').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function (e) {
+			        if (e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel') {
+			            $('html,body').stop();
+			        }
+			    })
+
+			    // Set up content an array of locations
+			    $('#sidemenu').find('a').each(function () {
+			        contentTop.push($($(this).attr('href')).offset().top);
+			    })
+
+			    // Animate menu scroll to content
+			    $('#sidemenu').find('a').click(function () {
+			        var sel = this,
+			            newTop = Math.min(contentTop[$('#sidemenu a').index($(this))], $(document).height() - $(window).height()); // get content top or top position if at the document bottom
+			        $('html,body').stop().animate({
+			            'scrollTop': newTop
+			        }, animationTime, function () {
+			            window.location.hash = $(sel).attr('href');
+			        });
+			         return false;
+			    })
+
+			    // adjust side menu
+			    $(window).scroll(function () {
+			        var winTop = $(window).scrollTop(),
+			            bodyHt = $(document).height(),
+			            vpHt = $(window).height() + edgeMargin; // viewport height + margin
+			        $.each(contentTop, function (i, loc) {
+			        	if ((loc > winTop - edgeMargin && (loc < winTop + topRange || (winTop + vpHt) >= bodyHt))) {
+			                $('#sidemenu li')
+			                    .removeClass('selected')
+			                    .eq(i).addClass('selected');
+			            }
+			        })
+			    })
+			})
+			 
+
+			$(document).ready(
+				function (){
+					$("#pikame_feb").PikaChoose({carousel:false});
+					$("#pikame_sa").PikaChoose({carousel:false});
+				});
+			});//]]>  
+		</script>
+
+
+		<style>
+			[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+			[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+			[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+			[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+		</style>
+
+	</head>
+
+	<!-- ####################################################### BODY ####################################################### -->
+
+	<body>
+
+	    <div id="main">
+
+	    	<div id="sidecontainer">
+	        	<div id="sidemenu">
+	            	<ul>
+	                	<li class="selected">
+	                		<a href="#about" style="display: block; padding: 8px; ">SAM HART</a>
+	                	</li>
+	                	<li>
+	                		<a href="#projects" style="display: block; padding: 8px; ">PROJECTS</a>
+	                	</li>
+	               		<li>
+	               			<a href="#publications" style="display: block; padding: 8px; ">PUBLICATIONS</a>
+	               		</li>
+	                	<li>
+	                		<a href="#exhibitions" style="display: block; padding: 8px; ">EXHIBITIONS</a>
+	                	</li>
+						<li>
+							<a href="#press" style="display: block;padding: 8px; ">PRESS</a>
+						</li>
+	            	</ul>
+	        	</div>
+		        <div id="sidelinks">
+		            <ul>
+		                <li>
+		                	<a href="http://vvvnt.com/" target="_blank" style="white-space: nowrap; display: block; padding: 8px; ">VVVNT</a>
+		                </li>
+		                <img class="unselectable" href="http://vvvnt.com/" target="_blank" src="./hxrts_files/external_link.png" width="12px" style="position: absolute; left: 52px; top: 152px;">
+		                <li>
+		                	<a href="http://audiovisualclub.tv/" target="_blank" style="white-space: nowrap; display: block; padding: 8px; ">A⁄⁄V CLUB</a>
+		                </li>
+		                <img class="unselectable" href="http://audiovisualclub.tv/" target="_blank" src="./hxrts_files/external_link.png" width="12px" style="position: absolute; left: 77px; top: 181px;">
+
+		            </ul>
+		        </div>
+	        
+				<div id="social_container">          
+					<div id="facebook">
+		    			<a href="http://facebook.com/hxrts" target="_blank"><img src="./hxrts_files/fbook.jpg" class="social"></a>
+					</div>
+					<div id="facebook_hover">
+						<img src="./hxrts_files/fbook_hover.jpg" class="social">
+					</div>
+		    		<div id="twitter">
+		    			<a href="http://twitter.com/hxrts" target="_blank"><img src="./hxrts_files/twitter.jpg" class="social"></a>
+					</div>
+					<div id="twitter_hover">
+						<img src="./hxrts_files/twitter_hover.jpg" class="social">
+					</div>
+					<div id="mail">
+		    			<a href="mailto:sam@hxrts.com?subject=message%20via%20hxrts.com" target="_blank"><img src="./hxrts_files/mail.jpg" class="social"></a>
+					</div>
+					<div id="mail_hover">
+						<img src="./hxrts_files/mail_hover.jpg" class="social">
+					</div>
+				</div>
+			</div>		<!--END #sidecontainer-->
+
+
+    	<div id="bod">
+
+    		<!-- ########## HXRTS ########## -->
+
+	        <div class="content" id="about_content">
+	        	<img src="./hxrts_files/graph_1.png" style="padding-left: 60px;">
+	            <div class="txt" style="margin-top: -48px;">
+
+	            	<a id="about"></a>
+
+	            	</br>
+	            	</br>
+
+	            	<h2>ABOUT</h2>
+	            	
+	            	<br>
+	            	<br>
+	  				Sam Hart is a scientist, media artist, and writer based in New York. His current research interests include the behavior and politics of emergent systems, epistemologies of scale, local equilibria, and conceptual model making. Sam studied chemical physics and structural biology at Wesleyan University under <a href="http://dbeveridge.blogs.wesleyan.edu/research-interests/" target="_blank">Dr. David Beveridge</a> and currently works as a staff scientist at Sloan Kettering's <a target="_blank" href="http://www.mskcc.org/research/human-oncology-pathogenesis">Human Oncology & Pathogenesis Program</a>, under <a href="http://www.mskcc.org/research/lab/cameron-brennan" target="_blank" >Dr. Cameron Brennan</a>, where he studies neuroligical cancer evolution.
+					</br>
+					</br>
+					Sam is co-founder and editor of <a target="_blank" href="http://vvvnt.com">VVVNT.com</a>, a web journal, forum, and project space for discussion of transdisciplinary ideas. He, together with sound artist <a target="_blank" href="http://twitter.com/_samsilver">Sam Silver</a>, comprise the 'future media' project <a target="_blank" href="http://audiovisualclub.tv">A // V CLUB</a>. Sam is also a founding member of the New York chapter of online underground electronic music show <a target="_blank" href="http://boilerroom.tv/">Boiler Room</a>, he has worked for MoMA PS1 in the production of sets for their <a target="_blank" href="http://momaps1.org/warmup/">Warmup</a> concert series, and as Technical Director of the Brooklyn media arts gallery <a target="_blank" href="http://319scholes.org">319 Scholes</a>. His writing can be found at <a target="_blank" href="http://rhizome.org">Rhizome.org</a>, <a target="_blank" href="http://dazeddigital.com">Dazed and Confused</a>, and <a href="http://vvvnt.com">VVVNT</a>. Sam is also an avid sailor, having grown up racing small boats.
+	        	</div>
+			</div>    
+
+			<a id="projects"></a>	<!-- ########## PROJECTS ########## -->
+
+	    	<br>
+	    	<br>
+	    
+	    	<h2>PROJECTS</h2>
+			<div class="content" id="projects_content">
+				<br>
+				<br>
+				<div class="txt" >
+				<a target="_blank" href="http://www.andfestival.org.uk/blog/life-on-film-by-stephen-fortune/">Life on Film</a> by Stephen Fortune at AND Festival (consult)
+
+				</br>
+				</br>
+
+				<a target="_blank" href="http://www.nytimes.com/2012/10/27/arts/dance/the-matter-2012-by-david-gordon-at-danspace-project.html?_r=0,">The Matter 2012: Art & Archive</a> by David Gordon at Judson Memorial Church (consult)
+
+				</br>
+				</br>
+
+				<a target="_blank" href="http://arthackday.net/319scholes/">Art Hack Day</a> at 319 Scholes (production)
+
+				</br>
+				</br>
+
+				Nightclub set produced for the film "February" designed in collaboration with Jessica Placzek.
+				</div>
+
+				<div id="gal_feb">
+					<ul id="pikame_feb" class="pika-thumbs">
+		       			<li class="active">
+		       				<div class="clip">
+		       					<img src="./feb/1.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;" class="active">
+		       				</div>
+		       			</li>
+						<li>
+							<div class="clip">
+								<img src="./feb/2.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+							</div>
+						</li>
+						<li>
+							<div class="clip">
+								<img src="./feb/3.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+							</div>
+						</li>
+						<li>
+							<div class="clip">
+								<img src="./feb/4.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+							</div>
+						</li>
+						<li>
+							<div class="clip">
+								<img src="./feb/5.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	    
+
+
+			<a id="publications"></a>				<!-- ########## PUBLICATIONS ########## -->
+
+				<br>
+				<br>
+
+				<h2>PUBLICATIONS</h2>
+
+				<br>
+				<br>
+
+				<div class="txt"  id="publications_content">
+					<h3>VVVNT</h3>
+					<br>
+					<br>
+					<a target="_blank" href="http://vvvnt.com/media/julian-oliver">Engineered Ecologies: An Interview with Julian Oliver</a>
+					<br>
+					<br>
+					<br>
+					<h3>Dazed &amp; Confused</h3>
+					<br>
+					<br>
+			        <a target="_blank" href="http://www.dazeddigital.com/artsandculture/article/17995/1/extrapolation-factory-will-sell-you-the-future">Profile: Extrapolation Factory</a>
+			        <br>
+			        <a target="_blank" href="http://www.dazeddigital.com/artsandculture/article/17671/1/top-ten-future-organisms">Future Organisms</a>
+			        <br>
+			    	<br>
+			    	<br>
+					<h3>Rhizome</h3>
+					<br>
+					<br>
+					<a target="_blank" href="http://rhizome.org/editorial/2013/aug/29/sampling-sonic-culture-momas-cautious-entry-world-">Sampling Sonic Culture: MoMA’s Cautious Entry Into a World of Noise</a>
+					<br>
+					<br>
+					<br>
+					<h3>Cell</h3>
+					<br>
+					<br>
+					<a target="_blank" href="http://www.cell.com/abstract/S0092-8674(13)01208-7">The Somatic Genomic Landscape of Glioblastoma</a>
+				</div>
+
+			<a id="exhibitions"></a>	<!-- ########## EXHIBITIONS ########## -->
+
+				<br>
+				<br>
+
+				<h2>EXHIBITIONS</h2>
+				
+				<br>
+				<br>
+			
+				<div class="content" id="exhibitions_content">
+					<div class="txt">
+						<h3>2013</h3>
+						<br>
+						<br>
+						<a href="http://thecurrentsessions.com/" target="_blank">The Current Sessions: Volume IV, Issue I.</a> (guest curator)</br></br>
+						<p style="line-height: 25px;">Evil Media distribution Center by Matsuko Yokokoji & Graham Harwood (contributor)</p>
+							<a style="line-height: 25px; margin-left:20px;" target="_blank" href="http://en.nai.nl/museum/exhibitions/current/item/_pid/kolom2-1/_rp_kolom2-1_elementId/1_1442882" >• Exhibited as part of The Ruin at the Netherlands Architecture Institute - Rotterdam, Netherlands</a>
+
+						<br>
+							<a style="line-height: 25px; margin-left:20px;" target="_blank" href="http://www.transmediale.de/content/evil-media-distribution-centre-0" >• Transmediale - Berlin, Germany</a>
+						<br>
+						<br>
+						<br>
+				        <h3>2010</h3>
+				        <br>
+				        <br>
+				        Self Assembly - Wesleyan University, Zilkha Gallery - Middletown, Connecticut, US (solo)
+						<br>
+					</div>
+
+					<div id="gal_sa">
+						<ul id="pikame_sa" class="pika-thumbs">
+			        		<li class="active">
+			        			<div class="clip">
+			        				<img src="./sa/1.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;" class="active">
+			        			</div>
+			        		</li>
+							<li>
+								<div class="clip">
+									<img src="./sa/2.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+								</div>
+							</li>
+							<li>
+								<div class="clip">
+									<img src="./sa/3.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+								</div>
+							</li>
+							<li>
+								<div class="clip">
+									<img src="./sa/4.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+								</div>
+							</li>
+							<li>
+								<div class="clip">
+									<img src="./sa/5.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			<a class="content" id="press"></a>	<!-- ########## PRESS ########## -->
+			    	
+		    	<br>
+		    	<br>
+		    
+		    	<h2>PRESS</h2>
+			
+				<br>
+				<br>
+		    
+		    	<div class="txt" class="content" id="press_content">
+			    	<a target="_blank" href="http://www.moma.org/explore/inside_out/2013/09/06/warm-up-2013-a-platform-for-design" >MoMA INSIDE / OUT</a>
+			    	<br>
+			    	<br>
+					<a target="_blank" href="http://blouinartinfo.com/news/story/946090/video-warm-up-with-fort-standard-at-moma-ps1" >ARTINFO<a>
+					<br>
+					<br>
+					<a target="_blank" href="http://wesleyanargus.com/2010/04/23/hart-%E2%80%9910-blends-biology-and-machinery/" >The Argus</a>
+					<br>
+					<br>
+					<a target="_blank" href="http://wesleying.org/2010/04/17/symmetry-man-its/" >Wesleying</a>
+					<br>
+					<br>
+		    	</div>
+
+	    	<div id="social_container_foot">          
+				<div class="social_foot">
+	    			<a href="http://facebook.com/hxrts" target="_blank"><img src="./hxrts_files/fbook.jpg" class="social"></a>
+				</div>
+	    		<div class="social_foot">
+	    			<a href="http://twitter.com/hxrts" target="_blank"><img src="./hxrts_files/twitter.jpg" class="social"></a>
+				</div>
+				<div class="social_foot">
+	    			<a href="mailto:sam@hxrts.com?subject=message%20via%20hxrts.com" target="_blank"><img src="./hxrts_files/mail.jpg" class="social"></a>
+				</div>
+			</div>
+
+			<div id="footer">	<!-- ########## FOOTER ########## -->
+				<div class="txt" id="footer_content">
+	    			<div id="attrib">
+	    				photography
+	    				<a href="http://www.lindsaykeys.com/" target="_blank">Lindsay Keys</a>
+	    				</br>
+	    				updated 12.5.13
+	    			</div>
+	    			<div style="position: absolute; text-align: right; bottom: 41px; left: 358px;">please <a href="mailto:sam@hxrts.com?subject=content usage" target="_blank">notify</a> upon redistributiion</div>
+
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+						<img style="position: absolute; bottom: 40px; left: 525px;" alt="Creative Commons License" style="border-width:0" src="./hxrts_files/80x15.png">
+					</a>
+		    	</div>
+			</div>
+
+		</div> <!-- ########## END #BOD ########## -->
+
+	</body>
+</html>

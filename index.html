@@ -89,10 +89,6 @@
 
     	<div id="bod">
 
-    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="slick/slick.min.js"></script>
-
     		<!-- ########## HXRTS ########## -->
 
 	        <div class="content" id="about_content">
@@ -143,28 +139,14 @@
 				Nightclub set produced for the film "February" designed in collaboration with Jessica Placzek.
 				</div>
 
-		        <div class="slick_feb">
+		        <div class="slick-feb">
     				<div><img src="./images/feb/1.jpg"></div>
 					<div><img src="./images/feb/2.jpg"></div>
 					<div><img src="./images/feb/3.jpg"></div>
 					<div><img src="./images/feb/4.jpg"></div>
 					<div><img src="./images/feb/5.jpg"></div>
 				</div>
-				<script type="text/javascript">
-			        $(document).ready(function(){
-			            $('.slick_feb').slick({
-			                  dots: true,
-							  infinite: true,
-							  speed: 500,
-							  fade: true,
-							  slide: '> div',
-							  cssEase: 'linear'
-			            });
-			        });
-		   		</script>
-
 			</div>	    
-
 
 			<a id="publications"></a>				<!-- ########## PUBLICATIONS ########## -->
 
@@ -301,5 +283,22 @@
 			</div>
 
 		</div> <!-- ########## END #BOD ########## -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slick-feb').slick({
+              dots: true,
+			  infinite: true,
+			  speed: 500,
+			  fade: true,
+			  slide: '> div',
+			  cssEase: 'linear'
+        });
+    });
+	</script>
+	
 	</body>
 </html>

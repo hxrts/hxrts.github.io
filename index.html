@@ -5,104 +5,33 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-		<title>SAM HART</title>
+		<title>Sam Hart</title>
 
-	 	<link href="./styles/fonts.css" rel="stylesheet" type="text/css">
+		<!-- Font Awesome CDN import -->
 	 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	 	<!-- Body styles -->
 	 	<link href="./styles/style.css" rel="stylesheet" type="text/css">
+	 	<link href="./styles/fonts.css" rel="stylesheet" type="text/css">
 
-		<script type="text/javascript" src="./js/jquery-1.6.4.js"></script>
+		<!-- Slick style import -->
+	 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
-		<link rel="stylesheet" type="text/css" href="./styles/normalize.css">
-		<link rel="stylesheet" type="text/css" href="./styles/result-light.css">
-
-		<script type="text/javascript" src="./js/jquery.gal.js"></script>
-		<link rel="stylesheet" type="text/css" href="./styles/theme_sa.css">
-
+	 	<!-- Google Analytics -->
 		<script type="text/javascript">
-
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-33550677-1']);
 			_gaq.push(['_trackPageview']);
-
 			(function() {
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
-
 		</script>
-
-		<script type="text/javascript">//<![CDATA[ 
-
-
-			$(window).load(function(){
-				var topRange = 200, // measure from the top of the viewport to X pixels down
-			    	edgeMargin = 20, // margin above the top or margin from the end of the page
-			    	animationTime = 400, // time in milliseconds
-			    	contentTop = [];
-
-
-			$(document).ready(function () {
-			    // Stop animated scroll if the user does something
-			    $('html,body').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function (e) {
-			        if (e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel') {
-			            $('html,body').stop();
-			        }
-			    })
-
-			    // Set up content an array of locations
-			    $('#sidemenu').find('a').each(function () {
-			        contentTop.push($($(this).attr('href')).offset().top);
-			    })
-
-			    // Animate menu scroll to content
-			    $('#sidemenu').find('a').click(function () {
-			        var sel = this,
-			            newTop = Math.min(contentTop[$('#sidemenu a').index($(this))], $(document).height() - $(window).height()); // get content top or top position if at the document bottom
-			        $('html,body').stop().animate({
-			            'scrollTop': newTop
-			        }, animationTime, function () {
-			            window.location.hash = $(sel).attr('href');
-			        });
-			         return false;
-			    })
-
-			    // adjust side menu
-			    $(window).scroll(function () {
-			        var winTop = $(window).scrollTop(),
-			            bodyHt = $(document).height(),
-			            vpHt = $(window).height() + edgeMargin; // viewport height + margin
-			        $.each(contentTop, function (i, loc) {
-			        	if ((loc > winTop - edgeMargin && (loc < winTop + topRange || (winTop + vpHt) >= bodyHt))) {
-			                $('#sidemenu li')
-			                    .removeClass('selected')
-			                    .eq(i).addClass('selected');
-			            }
-			        })
-			    })
-			})
-			 
-
-			$(document).ready(
-				function (){
-					$("#pikame_feb").PikaChoose({carousel:false});
-					$("#pikame_sa").PikaChoose({carousel:false});
-				});
-			});//]]>  
-		</script>
-
-
-		<style>
-			[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
-			[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
-			[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
-			[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
-		</style>
 
 	</head>
 
-	<!-- ####################################################### BODY ####################################################### -->
+<!-- ############################################# NAV ############################################# -->
 
 	<body>
 
@@ -156,8 +85,13 @@
 				</div>
 			</div>		<!--END #sidecontainer-->
 
+<!-- ############################################# BOD ############################################# -->
 
     	<div id="bod">
+
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 
     		<!-- ########## HXRTS ########## -->
 
@@ -209,35 +143,26 @@
 				Nightclub set produced for the film "February" designed in collaboration with Jessica Placzek.
 				</div>
 
-				<div id="gal_feb">
-					<ul id="pikame_feb" class="pika-thumbs">
-		       			<li class="active">
-		       				<div class="clip">
-		       					<img src="./images/feb/1.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;" class="active">
-		       				</div>
-		       			</li>
-						<li>
-							<div class="clip">
-								<img src="./images/feb/2.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-							</div>
-						</li>
-						<li>
-							<div class="clip">
-								<img src="./images/feb/3.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-							</div>
-						</li>
-						<li>
-							<div class="clip">
-								<img src="./images/feb/4.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-							</div>
-						</li>
-						<li>
-							<div class="clip">
-								<img src="./images/feb/5.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-							</div>
-						</li>
-					</ul>
+		        <div class="slick_feb">
+    				<div><img src="./images/feb/1.jpg"></div>
+					<div><img src="./images/feb/2.jpg"></div>
+					<div><img src="./images/feb/3.jpg"></div>
+					<div><img src="./images/feb/4.jpg"></div>
+					<div><img src="./images/feb/5.jpg"></div>
 				</div>
+				<script type="text/javascript">
+			        $(document).ready(function(){
+			            $('.slick_feb').slick({
+			                  dots: true,
+							  infinite: true,
+							  speed: 500,
+							  fade: true,
+							  slide: '> div',
+							  cssEase: 'linear'
+			            });
+			        });
+		   		</script>
+
 			</div>	    
 
 
@@ -312,35 +237,25 @@
 						<br>
 					</div>
 
-					<div id="gal_sa">
-						<ul id="pikame_sa" class="pika-thumbs">
-			        		<li class="active">
-			        			<div class="clip">
-			        				<img src="./images/sa/1.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;" class="active">
-			        			</div>
-			        		</li>
-							<li>
-								<div class="clip">
-									<img src="./images/sa/2.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-								</div>
-							</li>
-							<li>
-								<div class="clip">
-									<img src="./images/sa/3.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-								</div>
-							</li>
-							<li>
-								<div class="clip">
-									<img src="./images/sa/4.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-								</div>
-							</li>
-							<li>
-								<div class="clip">
-									<img src="./images/sa/5.jpg" style="display: inline; top: 0px; position: relative; width: 116px; height: 77px; opacity: 1;">
-								</div>
-							</li>
-						</ul>
-					</div>
+<!-- 			        <div class="slick_sa">
+        				<div><img src="./images/sa/1.jpg"></div>
+						<div><img src="./images/sa/2.jpg"></div>
+						<div><img src="./images/sa/3.jpg"></div>
+						<div><img src="./images/sa/4.jpg"></div>
+						<div><img src="./images/sa/5.jpg"></div>
+					</div> -->
+					// <script type="text/javascript">
+				 //        $(document).ready(function(){
+				 //            $('.slick_sa').slick({
+				 //                  dots: true,
+					// 			  infinite: true,
+					// 			  speed: 500,
+					// 			  fade: true,
+					// 			  slide: '> div',
+					// 			  cssEase: 'linear'
+				 //            });
+				 //        });
+			  //  		</script>
 				</div>
 				
 			<a class="content" id="press"></a>	<!-- ########## PRESS ########## -->
@@ -367,33 +282,24 @@
 					<br>
 					<br>
 		    	</div>
+<!-- ############################################# FOOTER ############################################# -->
 
-	    	<div id="social_container_foot">          
-				<div class="social_foot">
-	    			<a href="http://facebook.com/hxrts" target="_blank"><img src="./images/icons/fbook.jpg" class="social"></a>
-				</div>
-	    		<div class="social_foot">
-	    			<a href="http://twitter.com/hxrts" target="_blank"><img src="./images/icons/twitter.jpg" class="social"></a>
-				</div>
-				<div class="social_foot">
-	    			<a href="mailto:sam@hxrts.com?subject=message%20via%20hxrts.com" target="_blank"><img src="./images/icons/mail.jpg" class="social"></a>
-				</div>
-			</div>
-
-			<div id="footer">	<!-- ########## FOOTER ########## -->
+			<div id="footer">
 				<div class="txt" id="footer_content">
+
 	    			<div id="attrib">
 	    				</br>
 	    				updated 12.5.13
 	    			</div>
+
 	    			<p class="license-text" >please <a href="mailto:sam@hxrts.com?subject=content usage" target="_blank">notify</a> upon redistributiion</p>
 					<a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
 						<span id="menu-twitter" class="el-icon-cc"></span
 					</a>
+
 		    	</div>
 			</div>
 
 		</div> <!-- ########## END #BOD ########## -->
-
 	</body>
 </html>

@@ -288,7 +288,11 @@ max-width: 640px;
   left: 600px;
   font-size:2em;
 }
+.fade {
+  max-width: 640px;
+}
 .galimg {
+  max-width: 650px;
   width: 100%;
 }
 /* ELUSIVE */

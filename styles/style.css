@@ -288,8 +288,9 @@ max-width: 640px;
   left: 600px;
   font-size:2em;
 }
-.fade {
+.img {
   max-width: 640px;
+  width:100%;
 }
 .galimg {
   max-width: 650px;

@@ -182,10 +182,10 @@ max-width: 640px;
   font-size: 10px;
   font-weight: normal;
 }
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #footer {
-    margin-top: 100px;
-}
+      padding-bottom: 80px;
+  }
 }
 #footer a:link {
   text-decoration: none;
@@ -215,6 +215,17 @@ max-width: 640px;
   right:20px;
   font-size:1.5em;
   line-height: 220%;
+}
+#social_container_foot {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #social_container_foot {
+      display: inline-block;
+      float:left;
+      padding-right: 20px;
+      line-height: 150%;
+  }
 }
 
 /*SOCIAL*/

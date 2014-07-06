@@ -204,11 +204,6 @@ max-width: 640px;
 #attrib {
   float: left;
 }
-.license-text {
-  float: right;
-  padding-right:20px;
-  right: 20px;
-}
 .license {
   float: right;
   bottom: 38px;

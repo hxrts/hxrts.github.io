@@ -7,6 +7,9 @@
 
 		<title>Sam Hart</title>
 
+		<!-- Modernizer -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript"></script>
+
 		<!-- Font Awesome CDN import -->
 	 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -91,7 +94,7 @@
 
     		<!-- ########## HXRTS ########## -->
 
-	        <div class="content" id="about_content">
+	        <div id="about_content">
 	        	<img src="./images/graph_1.png" style="padding-left: 60px;">
 	            <div class="txt" style="margin-top: -48px;">
 
@@ -117,7 +120,7 @@
 	    	<br>
 	    
 	    	<h2>PROJECTS</h2>
-			<div class="content" id="projects_content">
+			<div id="projects_content">
 				<br>
 				<br>
 				<div class="txt" >
@@ -137,15 +140,18 @@
 				</br>
 
 				Nightclub set produced for the film "February" designed in collaboration with Jessica Placzek.
+				<br>
+				<br>
 				</div>
 
-		        <div class="slick-feb">
-    				<div><img src="./images/feb/1.jpg"></div>
-					<div><img src="./images/feb/2.jpg"></div>
-					<div><img src="./images/feb/3.jpg"></div>
-					<div><img src="./images/feb/4.jpg"></div>
-					<div><img src="./images/feb/5.jpg"></div>
+		        <div class="gal fade">
+    				<div><img class="galimg" src="images/feb/1.jpg"></div>
+					<div><img class="galimg" src="images/feb/2.jpg"></div>
+					<div><img class="galimg" src="images/feb/3.jpg"></div>
+					<div><img class="galimg" src="images/feb/4.jpg"></div>
+					<div><img class="galimg" src="images/feb/5.jpg"></div>
 				</div>
+
 			</div>	    
 
 			<a id="publications"></a>				<!-- ########## PUBLICATIONS ########## -->
@@ -198,7 +204,7 @@
 				<br>
 				<br>
 			
-				<div class="content" id="exhibitions_content">
+				<div id="exhibitions_content">
 					<div class="txt">
 						<h3>2013</h3>
 						<br>
@@ -217,30 +223,20 @@
 				        <br>
 				        Self Assembly - Wesleyan University, Zilkha Gallery - Middletown, Connecticut, US (solo)
 						<br>
+						<br>
 					</div>
 
-<!-- 			        <div class="slick_sa">
-        				<div><img src="./images/sa/1.jpg"></div>
-						<div><img src="./images/sa/2.jpg"></div>
-						<div><img src="./images/sa/3.jpg"></div>
-						<div><img src="./images/sa/4.jpg"></div>
-						<div><img src="./images/sa/5.jpg"></div>
-					</div> -->
-					// <script type="text/javascript">
-				 //        $(document).ready(function(){
-				 //            $('.slick_sa').slick({
-				 //                  dots: true,
-					// 			  infinite: true,
-					// 			  speed: 500,
-					// 			  fade: true,
-					// 			  slide: '> div',
-					// 			  cssEase: 'linear'
-				 //            });
-				 //        });
-			  //  		</script>
+					<div class="gal fade">
+	    				<div><img class="galimg" src="images/sa/1.jpg"></div>
+						<div><img class="galimg" src="images/sa/2.jpg"></div>
+						<div><img class="galimg" src="images/sa/3.jpg"></div>
+						<div><img class="galimg" src="images/sa/4.jpg"></div>
+						<div><img class="galimg" src="images/sa/5.jpg"></div>
+					</div>
+
 				</div>
 				
-			<a class="content" id="press"></a>	<!-- ########## PRESS ########## -->
+			<a id="press"></a>	<!-- ########## PRESS ########## -->
 			    	
 		    	<br>
 		    	<br>
@@ -250,7 +246,7 @@
 				<br>
 				<br>
 		    
-		    	<div class="txt" class="content" id="press_content">
+		    	<div class="txt" id="press_content">
 			    	<a target="_blank" href="http://www.moma.org/explore/inside_out/2013/09/06/warm-up-2013-a-platform-for-design" >MoMA INSIDE / OUT</a>
 			    	<br>
 			    	<br>
@@ -274,7 +270,7 @@
 	    				updated 12.5.13
 	    			</div>
 
-	    			<p class="license-text" >please <a href="mailto:sam@hxrts.com?subject=content usage" target="_blank">notify</a> upon redistributiion</p>
+	    			<p class="license-text" >please <a href="mailto:sam@hxrts.com?subject=content usage" target="_blank">notify</a> upon redistribution</p>
 					<a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
 						<span id="menu-twitter" class="el-icon-cc"></span
 					</a>
@@ -282,23 +278,12 @@
 		    	</div>
 			</div>
 
-		</div> <!-- ########## END #BOD ########## -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-
-	<script type="text/javascript">
-    $(document).ready(function(){
-        $('.slick-feb').slick({
-              dots: true,
-			  infinite: true,
-			  speed: 500,
-			  fade: true,
-			  slide: '> div',
-			  cssEase: 'linear'
-        });
-    });
-	</script>
+		</div> <!-- ########## END BOD ########## -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js"></script>
+		<script type="text/javascript" src="slick/slick.js"></script>
+		<script type="text/javascript" src="slick/gal_params.js"></script>
 	
 	</body>
 </html>

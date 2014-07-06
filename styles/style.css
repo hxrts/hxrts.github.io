@@ -150,7 +150,7 @@
 #twtr:hover {
 }
 #footer {
-  width: 650px;
+  max-width: 640px;
   height: 100px;
   background: #F2F2F2;
   margin-bottom: 20px;
@@ -195,31 +195,27 @@
   margin-top: 10px;
 }
 #about_content {
-  height: 860px;
+max-width: 640px;
 }
 #projects_content {
-height: 740px;
+
 }
 #publications_content {
-  height: 315px;
+
 }
 #exhibitions_content {
-  height: 820px;
+
 }
 #press_content {
-  height: 400px;
+
 }
 @media screen (max-width: 768px) {
     #press_content {
         height:200px;
   }
 }
-.content {
-  width: 670px;
-  margin: 10px 0 50px 0px;
-}
 #social_container {
-  margin-left: 3px;
+  margin-left: 42px;
   margin-top: 10px;
   position: relative;
 }
@@ -282,7 +278,7 @@ height: 740px;
 .license-text {
   position:absolute;
   text-align: right;
-  bottom: 42px;
+  bottom: 32px;
   left: 420px
 }
 .license {
@@ -291,6 +287,9 @@ height: 740px;
   bottom: 38px;
   left: 600px;
   font-size:2em;
+}
+.galimg {
+  width: 100%;
 }
 /* ELUSIVE */
 @font-face {

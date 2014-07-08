@@ -24,7 +24,7 @@
   color:#9EADA3;
 }
 .txt {
-
+  display: inline;
 }
 .txt a:hover {
   text-decoration: none;
@@ -34,7 +34,7 @@
 }
 #main {
   padding-top: 20px;
-  margin: 0 20px 0 300px;
+  margin-left:25%;
   position: relative;
   letter-spacing:0.5px;
   line-height:110%;
@@ -44,7 +44,7 @@
     margin: 0 30px 0 30px;
   }
 }
-#about_content {
+#about {
 max-width: 640px;
 }
 .img {
@@ -86,13 +86,13 @@ max-width: 640px;
 .fa-paper-plane-o:hover {
   color: #cb4b17;
 }
-.fa-link {
-  font-size: 0.85em;
+.el-icon-link {
+  font-size: 0.8em;
 }
 #sidecontainer {
   position: fixed;
-  top: 50px;
-  left: 30px;
+  top: 45px;
+  left: 6%;
   background:#fff;
   font-family:'Quattrocento Sans', sans-serif;
   font-size: 13px;
@@ -107,6 +107,8 @@ max-width: 640px;
 }
 #sidemenu ul {
   list-style-type: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 #sidemenu li {
   padding: 0px;
@@ -135,6 +137,8 @@ max-width: 640px;
 }
 #sidelinks ul {
   list-style-type: none;
+  margin-top: 0px;
+  padding-left: 0px;
 }
 #sidelinks li {
   padding: 0px;
@@ -162,34 +166,20 @@ max-width: 640px;
 .social:hover {
   cursor:pointer;
 }
-#fbook {
-}
-#fbook:hover {
-}
-#twtr {
-}
-#twtr:hover {
-}
 
 /****** FOOT ******/
 #footer {
   max-width: 640px;
   background: #F2F2F2;
-  padding-bottom: 50px;
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
   font-family:'Quattrocento Sans', sans-serif;
   font-size: 11px;
   font-weight: bold;
   line-height: 100%;
   font-size: 10px;
   font-weight: normal;
-}
-@media screen and (max-width: 768px) {
-  #footer {
-      padding-bottom: 80px;
-  }
+  height: 140px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 #footer a:link {
   text-decoration: none;
@@ -206,30 +196,76 @@ max-width: 640px;
   color: white;
 }
 #attrib {
-  float: left;
-}
-.license {
   float: right;
-  bottom: 38px;
-  right:20px;
-  font-size:1.5em;
-  line-height: 220%;
-}
-#social_container_foot {
-  display: none;
+  width: 100%;
+  text-align: right;
+  margin-right: 25px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 768px) {
-  #social_container_foot {
+  #attrib {
       display: inline-block;
-      float:left;
-      padding-right: 20px;
-      line-height: 150%;
+      float:none ;
+      text-align: center;
+      margin-top: 20px;
+      margin-right: none;
+      margin-bottom: 20px;
   }
+}
+#social_container_foot {
+  padding-top: 55px;
+  text-align: center;
+  display: block;
+  line-height: 150%;
+  white-space: nowrap;
+}
+.social-foot {
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom: 10px;
+  color: #9EADA3;
+  display: none;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .social-foot {
+      display: inline;
+  }
+}
+.social-foot-cc {
+  padding-left: 4%;
+  padding-right: 4%;
+  color: #9EADA3;
+  display: inline;
+  margin: 0 auto;
+  font-size: 3em;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .social-foot-cc {
+      display: inline;
+      font-size: 1.5em;
+      color: #9EADA3;
+  }
+}
+#twitter-foot {
+}
+#fbook-foot {
+}
+#git-foot {
+}
+#mail-foot {
+}
+#cc-foot {
+}
+#cc-foot:hover {
+  color: #F0FA2F;
 }
 
 /*SOCIAL*/
 #social_container {
-  margin-left: 42px;
+  margin-left: 2px;
   margin-top: 10px;
   position: relative;
 }
@@ -247,14 +283,14 @@ max-width: 640px;
 }
 #facebook {
   position: absolute;
-  left: 25px;
+  left: 26px;
   top: 0px;
 }
 #facebook:hover {
 }
 #github {
   position: absolute;
-  left: 45px;
+  left: 47px;
   top: 0px;
 }
 
@@ -262,7 +298,7 @@ max-width: 640px;
 }
 #mail {
   position: absolute;
-  left: 65px;
+  left: 68px;
   top: 0px;
 }
 #mail:hover {

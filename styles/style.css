@@ -112,21 +112,16 @@ max-width: 640px;
 }
 #sidemenu li {
   padding: 0px;
-  width: 109px;
   text-align: left;
-  display: block;
 }
 #sidemenu li:hover {
   background: #F2F2F2;
-  display: block;
 }
 #sidemenu li.selected {
   background: #D3F5DF;
-  display: block;
 }
 #sidemenu li.selected:hover {
   background: #D3F5DF;
-  display: block;
 }
 #sidemenu a {
   text-decoration: none;
@@ -236,7 +231,6 @@ max-width: 640px;
 .social-foot-cc {
   padding-left: 4%;
   padding-right: 4%;
-  color: #9EADA3;
   display: inline;
   margin: 0 auto;
   font-size: 3em;
@@ -260,7 +254,7 @@ max-width: 640px;
 #cc-foot {
 }
 #cc-foot:hover {
-  color: #F0FA2F;
+  color: #D3F5DF;
 }
 
 /*SOCIAL*/

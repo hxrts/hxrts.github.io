@@ -33,7 +33,9 @@ $(document).ready(function() {
         speed: 500,
         fade: true,
         slide: 'div',
-        cssEase: 'linear'
+        cssEase: 'linear',
+        draggable: true,
+        touchMove: true,
     });
 
 });

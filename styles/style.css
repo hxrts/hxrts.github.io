@@ -1,4 +1,7 @@
 /****** BOD ******/
+p, a, {
+  max-width: inherit;
+}
 #bod {
   font-family:'Quattrocento Sans', sans-serif;
   font-size: 13px;
@@ -24,7 +27,8 @@
   color:#9EADA3;
 }
 .txt {
-  display: inline;
+  max-width: 640px;
+  display: block;
 }
 .txt a:hover {
   text-decoration: none;
@@ -32,9 +36,14 @@
   color:#9EADA3;
   background: #F2F2F2;
 }
+.indent {
+  padding-left: 25px;
+  line-height: 1.8em;
+}
 #main {
   padding-top: 20px;
   margin-left:25%;
+  margin-right:10%;
   position: relative;
   letter-spacing:0.5px;
   line-height:110%;
@@ -43,9 +52,6 @@
   #main {
     margin: 0 30px 0 30px;
   }
-}
-#about {
-max-width: 640px;
 }
 .img {
   max-width: 640px;

@@ -240,13 +240,13 @@ p, a, {
   display: inline;
   margin: 0 auto;
   font-size: 3em;
-  color: white;
+  color: #9EADA3;
 }
 @media screen and (max-width: 768px) {
   .social-foot-cc {
       display: inline;
       font-size: 1.5em;
-      color: #1FC46C;
+      color: #9EADA3;
   }
 }
 #twitter-foot {
@@ -260,7 +260,7 @@ p, a, {
 #cc-foot {
 }
 #cc-foot:hover {
-  color: #D3F5DF;
+  color: #1F9C4F;
 }
 
 /*SOCIAL*/

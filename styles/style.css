@@ -33,8 +33,7 @@ p, a, {
 .txt a:hover {
   text-decoration: none;
   font-weight: normal;
-  color:#9EADA3;
-  background: #F2F2F2;
+  color:#4e647c !important;
 }
 .indent {
   padding-left: 25px;
@@ -119,15 +118,18 @@ p, a, {
 #sidemenu li {
   padding: 0px;
   text-align: left;
+  display:inline-block;
+  transition: margin-left 0.3s ease;
 }
 #sidemenu li:hover {
   background: #F2F2F2;
 }
 #sidemenu li.selected {
-  background: #D3F5DF;
+  background: #4e647c;
+  margin-left:9px;
 }
 #sidemenu li.selected:hover {
-  background: #D3F5DF;
+  background: #4e647c;
 }
 #sidemenu a {
   text-decoration: none;
@@ -135,6 +137,11 @@ p, a, {
 }
 #sidemenu li.selected a {
   text-decoration: none;
+  color: white;
+}
+#sidemenu li.selected:hover a {
+  text-decoration: none;
+  color: white;
 }
 #sidelinks ul {
   list-style-type: none;
@@ -144,12 +151,10 @@ p, a, {
 #sidelinks li {
   padding: 0px;
   text-align: left;
-  width: 118px;
-  display: block;
+  display: inline-block;
 }
 #sidelinks li:hover {
   background: #F2F2F2;
-  display: block;
 }
 #sidelinks a {
   text-decoration: none;
@@ -258,6 +263,7 @@ p, a, {
 #mail-foot {
 }
 #cc-foot {
+  color: white;
 }
 #cc-foot:hover {
   color: #4e647c;
@@ -283,14 +289,14 @@ p, a, {
 }
 #facebook {
   position: absolute;
-  left: 26px;
+  left: 27px;
   top: 0px;
 }
 #facebook:hover {
 }
 #github {
   position: absolute;
-  left: 47px;
+  left: 50px;
   top: 0px;
 }
 
@@ -298,7 +304,7 @@ p, a, {
 }
 #mail {
   position: absolute;
-  left: 68px;
+  left: 71px;
   top: 0px;
 }
 #mail:hover {

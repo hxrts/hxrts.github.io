@@ -48,27 +48,21 @@
 						<li class="selected">
 							<a href="#about" rel="" style="display: block; padding: 8px; ">SAM HART</a>
 						</li>
-						<br>
 						<li>
 							<a href="#publications" rel="" style="display: block; padding: 8px; ">PUBLICATIONS</a>
 						</li>
-						<br>
 						<li>
 							<a href="#talks" rel="" style="display: block; padding: 8px; ">TALKS</a>
 						</li>
-						<br>
 						<li>
 							<a href="#exhibitions" rel="" style="display: block; padding: 8px; ">EXHIBITIONS</a>
 						</li>
-						<br>
 						<li>
 							<a href="#performances" rel="" style="display: block; padding: 8px; ">PERFORMANCES</a>
 						</li>
-						<br>
 						<li>
 							<a href="#projects" rel="" style="display: block; padding: 8px; ">PROJECTS</a>
 						</li>
-						<br>
 						<li>
 							<a href="#press" rel="" style="display: block;padding: 8px; ">PRESS</a>
 						</li>
@@ -80,7 +74,6 @@
 						<li>
 							<a href="http://vvvnt.com/" target="_blank" style="white-space: nowrap; display: block; padding: 8px; ">AVANT <span id="menu-link" class="el-icon-link"></span></i></a>
 						</li>
-						<br>
 						<li>
 							<a href="http://audiovisualclub.tv/" target="_blank" style="white-space: nowrap; display: block; padding: 8px; ">A⁄⁄V CLUB <span id="menu-link" class="el-icon-link"></span></a>
 						</li>
@@ -116,7 +109,11 @@
 					Sam Hart is a scientist, media artist, and writer based in New York. His current research areas include the behavior and politics of emergent systems, ethical resource use, and the neurophysiology of model making. Sam studied chemical physics and structural biology at Wesleyan University under <a href="http://dbeveridge.blogs.wesleyan.edu/research-interests/" target="_blank">Dr. David Beveridge</a> and currently works as a staff scientist at Sloan Kettering's <a target="_blank" href="http://www.mskcc.org/research/human-oncology-pathogenesis">Human Oncology & Pathogenesis Program</a>, under <a href="http://www.mskcc.org/research/lab/cameron-brennan" target="_blank" >Dr. Cameron Brennan</a>, where he studies neuroligical cancer evolution.
 					</br>
 					</br>
+<<<<<<< HEAD
 					Sam is co-founder and Editor-in-Chief of <a target="_blank" href="http://vvvnt.com">AVANT</a>, a web journal, forum, and project space for discussion of transdisciplinary ideas. He, together with sound artist <a target="_blank" href="http://twitter.com/_samsilver">Sam Silver</a>, comprise the 'future media' project <a target="_blank" style="white-space:nowrap;" href="http://audiovisualclub.tv">A // V CLUB</a>. Sam is also a founding member of the New York chapter of online underground electronic music show <a target="_blank" href="http://boilerroom.tv/">Boiler Room</a>, he has worked for MoMA PS1 in the production of sets for their <a target="_blank" href="http://momaps1.org/warmup/">Warmup</a> concert series, and as Technical Director of the Brooklyn media arts gallery <a target="_blank" href="http://319scholes.org">319 Scholes</a>. His writing can be found at <a target="_blank" href="http://rhizome.org">Rhizome.org</a>, <a target="_blank" href="http://dazeddigital.com">Dazed and Confused</a>, and <a target="_blank" href="http://vvvnt.com">AVANT</a>. Sam is also an avid sailor, having grown up racing small boats.
+=======
+					Sam is co-founder and Editor-in-Chief of <a target="_blank" href="http://vvvnt.com">VVVNT.com</a>, a web journal, forum, and project space for discussion of transdisciplinary ideas. He, together with sound artist <a target="_blank" href="http://twitter.com/_samsilver">Sam Silver</a>, comprise the experimental multimedia project <a target="_blank" style="white-space:nowrap;" href="http://audiovisualclub.tv">A // V CLUB</a>. Sam is also a founding member of the New York chapter of online underground electronic music show <a target="_blank" href="http://boilerroom.tv/">Boiler Room</a>, he has worked for MoMA PS1 in the production of sets for their <a target="_blank" href="http://momaps1.org/warmup/">Warmup</a> concert series, and as Technical Director of the Brooklyn media arts gallery <a target="_blank" href="http://319scholes.org">319 Scholes</a>. His writing can be found at <a target="_blank" href="http://rhizome.org">Rhizome.org</a>, <a target="_blank" href="http://dazeddigital.com">Dazed and Confused</a>, and <a target="_blank" href="http://vvvnt.com">VVVNT</a>. Sam is also an avid sailor, having grown up racing small boats.
+>>>>>>> f9b44b851f6eb07be5d7ddc38e4a6b46d4b4d9f3
 				</div>
 			</div>
 			<br>

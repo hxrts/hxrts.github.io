@@ -119,14 +119,14 @@ p, a, {
   padding: 0px;
   text-align: left;
   display:inline-block;
-  transition: margin-left 0.3s ease;
+/*  transition: margin-left 0.3s ease;*/
 }
 #sidemenu li:hover {
   background: #F2F2F2;
 }
 #sidemenu li.selected {
   background: #4e647c;
-  margin-left:9px;
+/*  margin-left:9px;*/
 }
 #sidemenu li.selected:hover {
   background: #4e647c;

@@ -18,9 +18,11 @@ p, a, {
 }
 #bod a:link {
   font-weight: normal;
+  color:black;
 }
 #bod a:visited {
   font-weight: normal;
+  color:black;
 }
 .txt {
   max-width: 640px;

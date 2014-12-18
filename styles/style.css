@@ -17,21 +17,16 @@ p, a, {
   display: inline-block;
 }
 #bod a:link {
-  text-decoration: none;
   font-weight: normal;
-  color:#9EADA3;
 }
 #bod a:visited {
-  text-decoration: none;
   font-weight: normal;
-  color:#9EADA3;
 }
 .txt {
   max-width: 640px;
   display: block;
 }
 .txt a:hover {
-  text-decoration: none;
   font-weight: normal;
   color:#4e647c !important;
 }

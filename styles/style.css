@@ -131,7 +131,6 @@ p, a, {
 #sidemenu a {
   text-decoration: none;
   color: #000;
-  @mixin linkUnderlines (#fff, #000);
 }
 #sidemenu a:hover {
   text-decoration: underline;

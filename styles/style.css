@@ -131,6 +131,7 @@ p, a, {
 #sidemenu a {
   text-decoration: none;
   color: #000;
+  linkUnderlines: #fff, #000;
 }
 #sidemenu a:hover {
   text-decoration: underline;
@@ -162,6 +163,7 @@ p, a, {
 #sidelinks a {
   text-decoration: none;
   color: #000;
+  linkUnderlines: #fff, #000;
 }
 .unselectable {
   -moz-user-select: -moz-none;

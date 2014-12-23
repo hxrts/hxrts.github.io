@@ -47,8 +47,9 @@ p, a, {
   position: relative;
   letter-spacing:0.5px;
   line-height:110%;
+  transition: margin 0.2s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   #main {
     margin: 0 15px 0 15px;
   }
@@ -106,7 +107,7 @@ p, a, {
   line-height:100%;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   #sidecontainer {
       display: none;
   }
@@ -241,7 +242,7 @@ p, a, {
   margin-right: 25px;
   margin-top: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   #attrib {
       display: inline-block;
       float:none ;
@@ -267,7 +268,7 @@ p, a, {
   margin: 0 auto;
   font-size: 1.5em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .social-foot {
       display: inline;
   }
@@ -280,7 +281,7 @@ p, a, {
   font-size: 3em;
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .social-foot-cc {
       display: inline;
       font-size: 1.5em;

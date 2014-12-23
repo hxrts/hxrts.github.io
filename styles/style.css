@@ -119,39 +119,45 @@ p, a, {
 /*  transition: margin-left 0.3s ease;*/
 }
 #sidemenu li:hover {
-  background: #F2F2F2;
+/*  background: #F2F2F2;*/
 }
 #sidemenu li.selected {
-  background: #4e647c;
+/*  background: #4e647c;*/
 /*  margin-left:9px;*/
 }
 #sidemenu li.selected:hover {
-  background: #4e647c;
+/*  background: #4e647c;*/
 }
 #sidemenu a {
   text-decoration: none;
   color: #000;
 }
+#sidemenu a:hover {
+  text-decoration: underline;
+  color: #000;
+}
 #sidemenu li.selected a {
-  text-decoration: none;
-  color: white;
+  text-decoration: underline;
+/*  color: white;*/
 }
 #sidemenu li.selected:hover a {
-  text-decoration: none;
-  color: white;
+/*  text-decoration: none;*/
+/*  color: white;*/
 }
 #sidelinks ul {
   list-style-type: none;
   margin-top: 0px;
   padding-left: 0px;
+  -webkit-margin-after: 10px;
 }
 #sidelinks li {
   padding: 0px;
   text-align: left;
   display: inline-block;
 }
-#sidelinks li:hover {
-  background: #F2F2F2;
+#sidelinks li a:hover {
+    text-decoration: underline;
+/*  background: #F2F2F2;*/
 }
 #sidelinks a {
   text-decoration: none;
@@ -268,13 +274,12 @@ p, a, {
 /*SOCIAL*/
 #social_container {
   margin-left: 2px;
-  margin-top: 10px;
+  padding-top: 30px;
   position: relative;
 }
 .social {
   width: 13px;
   padding-left: 5px;
-  padding-top: 20px;
 }
 #twitter {
   position: absolute;

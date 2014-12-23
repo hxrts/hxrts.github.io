@@ -30,7 +30,7 @@ p, a, {
 }
 .txt a:hover {
   font-weight: normal;
-  color:#4e647c !important;
+  color:#8A9CBF !important;
 }
 .indent {
   padding-left: 25px;
@@ -118,31 +118,31 @@ p, a, {
   display:inline-block;
 /*  transition: margin-left 0.3s ease;*/
 }
-#sidemenu li:hover {
-/*  background: #F2F2F2;*/
-}
-#sidemenu li.selected {
-/*  background: #4e647c;*/
-/*  margin-left:9px;*/
-}
-#sidemenu li.selected:hover {
-/*  background: #4e647c;*/
-}
 #sidemenu a {
   text-decoration: none;
-  color: #000;
+  color:#000;
+  position:relative;
 }
 #sidemenu a:hover {
-  text-decoration: underline;
-  color: #000;
+  color: #8A9CBF;
+}
+#sidemenu a:after {
+  text-decoration:none;
+  display:block;
+  width:100%;
+  border-top:1px solid #000;
+  content:"";
+  bottom:0.1em;
+  z-index:-1
+}
+#sidemenu a:hover:after {
+  border-top:1px solid #8A9CBF;
 }
 #sidemenu li.selected a {
-  text-decoration: underline;
-/*  color: white;*/
+  color: #8A9CBF;
 }
-#sidemenu li.selected:hover a {
-/*  text-decoration: none;*/
-/*  color: white;*/
+#sidemenu li.selected a:after {
+  border-top:1px solid #8A9CBF;
 }
 #sidelinks ul {
   list-style-type: none;
@@ -155,14 +155,42 @@ p, a, {
   text-align: left;
   display: inline-block;
 }
-#sidelinks li a:hover {
-    text-decoration: underline;
-/*  background: #F2F2F2;*/
-}
+
+
 #sidelinks a {
   text-decoration: none;
-  color: #000;
+  color:#000;
+  position:relative;
 }
+#sidelinks a:hover {
+  color: #8A9CBF;
+}
+#sidelinks a:after {
+  text-decoration:none;
+  display:block;
+  width:100%;
+  border-top:1px solid #000;
+  content:"";
+  bottom:0.1em;
+  z-index:-1
+}
+#sidelinks a:hover:after {
+  border-top:1px solid #8A9CBF;
+}
+#sidelinks li.selected a {
+  color: #8A9CBF;
+}
+#sidelinks li.selected a:after {
+  border-top:1px solid #8A9CBF;
+}
+#sidelinks ul {
+  list-style-type: none;
+  margin-top: 0px;
+  padding-left: 0px;
+  -webkit-margin-after: 10px;
+}
+
+
 .unselectable {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
@@ -254,9 +282,13 @@ p, a, {
   .social-foot-cc {
       display: inline;
       font-size: 1.5em;
-      color: #9EADA3;
+      color: #8A9CBF;
   }
 }
+#cc-foot:hover {
+  color: #8A9CBF;
+}
+
 #twitter-foot {
 }
 #fbook-foot {
@@ -264,11 +296,6 @@ p, a, {
 #git-foot {
 }
 #mail-foot {
-}
-#cc-foot {
-}
-#cc-foot:hover {
-  color: #4e647c;
 }
 
 /*SOCIAL*/

@@ -366,3 +366,6 @@ p, a, {
 .el-icon-facebook:before {
   content: "\e6d9";
 }
+.el-icon-cc:before {
+  content: "\e702";
+}

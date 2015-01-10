@@ -1,10 +1,17 @@
 /* --------------------------------------- BODY --------------------------------------- */
-p, a, {
+p, a {
   max-width: inherit;
 }
+a:hover {
+  font-weight: normal;
+  color:#8A9CBF !important;
+}
+.nosub {margin-bottom: 23px;}
 #bod {
   font-family:'Quattrocento Sans', sans-serif;
   font-size: 13px;
+  max-width: 640px;
+  display: block;
 }
 #bod h2 {
   font-weight: bold;
@@ -15,6 +22,7 @@ p, a, {
   font-weight: bold;
   font-size: 13px;
   display: inline-block;
+  line-height: 0.5em;
 }
 #bod a:link {
   font-weight: normal;
@@ -27,14 +35,6 @@ p, a, {
 #bod a:visited {
   font-weight: normal;
   color:black;
-}
-.txt {
-  max-width: 640px;
-  display: block;
-}
-.txt a:hover {
-  font-weight: normal;
-  color:#8A9CBF !important;
 }
 .indent {
   padding-left: 25px;

@@ -130,6 +130,7 @@ a:hover {
 }
 #sidemenu a:hover {
   color: #000;
+  font-weight: bold;
 }
 #sidemenu a:after {
   text-decoration:none;
@@ -167,6 +168,7 @@ a:hover {
 }
 #sidelinks a:hover {
   color: #000;
+  font-weight: bold;
 }
 #sidelinks a:after {
   text-decoration:none;

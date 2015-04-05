@@ -1,15 +1,19 @@
 $('a').click(function(){
 
-    //$(this).parent.addClass('selected');
-
+	// scroll to the proper tag
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 250);
 
-    //document.getElementByClass("selected").removeClass("selected");
-
+    // logic for setting the current page
     $(".selected").removeClass("selected");
     $(this).parent().addClass("selected");
 
+    //  change the URL for deep linking
+  	var page = $(this).parent();
+	window.location.href = url;
+
+	// no return objects necessary
     return false;
+    
 });

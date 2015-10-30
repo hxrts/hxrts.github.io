@@ -297,7 +297,7 @@ a:hover {
 /* --------------------------------------- SOCIAL --------------------------------------- */
 #social_container {
   margin-left: 2px;
-  padding-top: 30px;
+  margin-top: 5px;
   position: relative;
 }
 .social {

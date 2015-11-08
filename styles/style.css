@@ -66,6 +66,12 @@ a:hover {
   max-width: 650px;
   width: 100%;
 }
+.img-tall {
+  width: 60%;
+}
+.img-tall-wrapper {
+  text-align:center;
+}
 
 /* --------------------------------------- NAV --------------------------------------- */
 .social-link {

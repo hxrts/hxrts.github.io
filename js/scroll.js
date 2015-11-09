@@ -44,7 +44,7 @@ $(document).ready(function(){
         if (isScrolledIntoView("#exhibitions")) { window.history.replaceState("state", "title", "#exhibitions"); return; }
         if (isScrolledIntoView("#performances")) { window.history.replaceState("state", "title", "#performances"); return; }
         if (isScrolledIntoView("#projects")) { window.history.replaceState("state", "title", "#projects"); return; }
-        if (isScrolledIntoView("#press")) { window.history.replaceState("state", "title", "#content"); return; }
+        if (isScrolledIntoView("#press")) { window.history.replaceState("state", "title", "#press"); return; }
     });
 
 });

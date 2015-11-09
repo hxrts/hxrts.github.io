@@ -32,19 +32,19 @@ $(document).ready(function(){
         var elemTop = $elem.offset().top;
         var elemBottom = elemTop + $elem.height();
 
-        console.log($(elem));
+        var returnElem = (elemBottom <= docViewBottom) && (elemTop >= docViewTop)
 
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        return (returnElem);
     }
 
     $(window).scroll(function() {
-        if (isScrolledIntoView("#about")) { window.history.replaceState("state", "title", "#about"); return; }
-        if (isScrolledIntoView("#publications")) { window.history.replaceState("state", "title", "#publications"); return; }
-        if (isScrolledIntoView("#talks")) { window.history.replaceState("state", "title", "#talks"); return; }
-        if (isScrolledIntoView("#exhibitions")) { window.history.replaceState("state", "title", "#exhibitions"); return; }
-        if (isScrolledIntoView("#performances")) { window.history.replaceState("state", "title", "#performances"); return; }
-        if (isScrolledIntoView("#projects")) { window.history.replaceState("state", "title", "#projects"); return; }
-        if (isScrolledIntoView("#press")) { window.history.replaceState("state", "title", "#press"); return; }
+        if (isScrolledIntoView("#about"))           { window.history.replaceState("state", "title", "#about"); return; }
+        if (isScrolledIntoView("#publications"))    { window.history.replaceState("state", "title", "#publications"); return; }
+        if (isScrolledIntoView("#talks"))           { window.history.replaceState("state", "title", "#talks"); return; }
+        if (isScrolledIntoView("#exhibitions"))     { window.history.replaceState("state", "title", "#exhibitions"); return; }
+        if (isScrolledIntoView("#performances"))    { window.history.replaceState("state", "title", "#performances"); return; }
+        if (isScrolledIntoView("#projects"))        { window.history.replaceState("state", "title", "#projects"); return; }
+        if (isScrolledIntoView("#press"))           { window.history.replaceState("state", "title", "#press"); return; }
     });
 
 });

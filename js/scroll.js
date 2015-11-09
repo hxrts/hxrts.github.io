@@ -34,6 +34,8 @@ $(document).ready(function(){
 
         var returnElem = (elemBottom <= docViewBottom) && (elemTop >= docViewTop)
 
+        console.print(returnElem)
+
         return (returnElem);
     }
 

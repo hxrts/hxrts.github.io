@@ -20,33 +20,33 @@ $('a').click(function(){
 
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-    function isScrolledIntoView(elem){
-        var $elem = $(elem);
-        var $window = $(window);
+//     function isScrolledIntoView(elem){
+//         var $elem = $(elem);
+//         var $window = $(window);
 
-        var docViewTop = $window.scrollTop();
-        var docViewBottom = docViewTop + $window.height();
+//         var docViewTop = $window.scrollTop();
+//         var docViewBottom = docViewTop + $window.height();
 
-        var elemTop = $elem.offset().top;
-        var elemBottom = elemTop + $elem.height();
+//         var elemTop = $elem.offset().top;
+//         var elemBottom = elemTop + $elem.height();
 
-        var returnElem = (elemBottom <= docViewBottom) && (elemTop >= docViewTop)
+//         var returnElem = (elemBottom <= docViewBottom) && (elemTop >= docViewTop)
 
-        console.log(returnElem)
+//         console.log(returnElem)
 
-        return (returnElem);
-    }
+//         return (returnElem);
+//     }
 
-    $(window).scroll(function() {
-        if (isScrolledIntoView("#about"))           { window.history.replaceState("state", "title", "#about"); return; }
-        if (isScrolledIntoView("#publications"))    { window.history.replaceState("state", "title", "#publications"); return; }
-        if (isScrolledIntoView("#talks"))           { window.history.replaceState("state", "title", "#talks"); return; }
-        if (isScrolledIntoView("#exhibitions"))     { window.history.replaceState("state", "title", "#exhibitions"); return; }
-        if (isScrolledIntoView("#performances"))    { window.history.replaceState("state", "title", "#performances"); return; }
-        if (isScrolledIntoView("#projects"))        { window.history.replaceState("state", "title", "#projects"); return; }
-        if (isScrolledIntoView("#press"))           { window.history.replaceState("state", "title", "#press"); return; }
-    });
+//     $(window).scroll(function() {
+//         if (isScrolledIntoView("#about"))           { window.history.replaceState("state", "title", "#about"); return; }
+//         if (isScrolledIntoView("#publications"))    { window.history.replaceState("state", "title", "#publications"); return; }
+//         if (isScrolledIntoView("#talks"))           { window.history.replaceState("state", "title", "#talks"); return; }
+//         if (isScrolledIntoView("#exhibitions"))     { window.history.replaceState("state", "title", "#exhibitions"); return; }
+//         if (isScrolledIntoView("#performances"))    { window.history.replaceState("state", "title", "#performances"); return; }
+//         if (isScrolledIntoView("#projects"))        { window.history.replaceState("state", "title", "#projects"); return; }
+//         if (isScrolledIntoView("#press"))           { window.history.replaceState("state", "title", "#press"); return; }
+//     });
 
-});
+// });

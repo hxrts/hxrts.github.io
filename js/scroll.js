@@ -38,7 +38,7 @@ $(document).ready(function(){
     }
 
     $(window).scroll(function() {
-        if (isScrolledIntoView("#about")) { window.history.replaceState("state", "title", ""); return; }
+        if (isScrolledIntoView("#about")) { window.history.replaceState("state", "title", "#about"); return; }
         if (isScrolledIntoView("#publications")) { window.history.replaceState("state", "title", "#publications"); return; }
         if (isScrolledIntoView("#talks")) { window.history.replaceState("state", "title", "#talks"); return; }
         if (isScrolledIntoView("#exhibitions")) { window.history.replaceState("state", "title", "#exhibitions"); return; }

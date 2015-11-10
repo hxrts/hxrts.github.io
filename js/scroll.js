@@ -60,6 +60,7 @@ $(document).ready(function(){
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
                 console.log(window.location.hash.substr(1))
+                console.log(theID)
                 //if (window.location.href != 
                 window.history.replaceState("state", "title", theID);
             }

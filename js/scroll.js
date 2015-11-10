@@ -62,7 +62,7 @@ $(document).ready(function(){
             }
             console.log("#" + window.location.hash.substr(1))
             console.log(theID)
-            console.log("#" + window.location.hash.substr(1)==theID)
+            console.log("#" + window.location.hash.substr(1)== aArray[-1])
             console.log("-------")
             //if (window.location.href != 
             window.history.replaceState("state", "title", theID);

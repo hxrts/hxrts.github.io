@@ -59,7 +59,7 @@ $(document).ready(function(){
                 $("a[href='" + theID + "']").parent().removeClass("selected");
             }
         }
-        if(windowPos + windowHeight > (docHeight - 150)) {
+        if(windowPos + windowHeight == (docHeight)) {
             if (!$("#sidemenu li:last-child").hasClass("selected")) {
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");

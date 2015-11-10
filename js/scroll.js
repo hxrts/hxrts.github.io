@@ -60,12 +60,12 @@ $(document).ready(function(){
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
             }
+            //if (window.location.href != 
+            window.history.replaceState("state", "title", theID);
             console.log("#" + window.location.hash.substr(1))
             console.log(aArray[aArray.length - 1])
             console.log("#" + window.location.hash.substr(1)== aArray[aArray.length - 1])
             console.log("-------")
-            //if (window.location.href != 
-            window.history.replaceState("state", "title", theID);
         }
     });
 });

@@ -59,16 +59,16 @@ $(document).ready(function(){
                 $("a[href='" + theID + "']").parent().removeClass("selected");
             }
         }
-        if(windowPos + windowHeight > (docHeight - 100)) {
+        if(windowPos + windowHeight > (docHeight - 150)) {
             if (!$("#sidemenu li:last-child").hasClass("selected")) {
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
             }
-            // window.setInterval(function(){
+            window.setInterval(function(){
                 if("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1]) {
                     window.history.replaceState("state", "title", theID);
                 }
-            // }, 100);
+            }, 100);
         }
     });
 });

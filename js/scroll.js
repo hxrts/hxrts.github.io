@@ -56,8 +56,8 @@ $(document).ready(function(){
                 $("a[href='" + theID + "']").parent().removeClass("selected");
             }
         }
-        if(windowPos + windowHeight > docHeight - 20) {
-            if (!$("#sidemenu li:nth-last-child(3)").hasClass("selected")) {
+        if(windowPos + windowHeight > (docHeight - 100)) {
+            if (!$("#sidemenu li:last-child").hasClass("selected")) {
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
                 window.history.replaceState("state", "title", theID);

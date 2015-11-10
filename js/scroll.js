@@ -39,7 +39,9 @@ $(document).ready(function(){
         var divHeight = $(theID).height();
         if (windowPos >= 0 && windowPos < (divPos + divHeight - 200 )) {
             $("#sidemenu li:first-child").addClass("selected");
-            window.history.replaceState("state", "title", theID);
+            if("#" + window.location.hash.substr(1)!=theID) {
+                window.history.replaceState("state", "title", theID);
+            }
         } else {
             $("a[href='" + theID + "']").parent().removeClass("selected");
         }
@@ -50,6 +52,9 @@ $(document).ready(function(){
             var divHeight = $(theID).height();
             if (windowPos >= divPos - 200 && windowPos < (divPos + divHeight - 200)) {
                 $("a[href='" + theID + "']").parent().addClass("selected");
+                if("#" + window.location.hash.substr(1)!=theID) {
+                    window.history.replaceState("state", "title", theID);
+                }
                 window.history.replaceState("state", "title", theID);
             } else {
                 $("a[href='" + theID + "']").parent().removeClass("selected");
@@ -60,12 +65,9 @@ $(document).ready(function(){
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
             }
-            //if (window.location.href != 
-            window.history.replaceState("state", "title", theID);
-            console.log("#" + window.location.hash.substr(1))
-            console.log(aArray[aArray.length - 1])
-            console.log("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1])
-            console.log("-------")
+            if("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1]) {
+                window.history.replaceState("state", "title", theID);
+            }
         }
     });
 });

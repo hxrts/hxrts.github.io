@@ -72,6 +72,9 @@ a:hover {
 .img-tall-wrapper {
   text-align:center;
 }
+.section {
+  margin-bottom: 15px;
+}
 
 /* --------------------------------------- NAV --------------------------------------- */
 .social-link {
@@ -134,6 +137,19 @@ a:hover {
   color:#000;
   position:relative;
 }
+
+
+
+
+.nav-active {
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+
+
 #sidemenu a:hover {
   color: #000;
   font-weight: bold;

@@ -18,35 +18,59 @@ $('a').click(function(){
     
 });
 
+$(document).ready(function(){
 
+    /**
+     * This part handles the highlighting functionality.
+     * We use the scroll functionality again, some array creation and 
+     * manipulation, class adding and class removing, and conditional testing
+     */
+    var aChildren = $("#sidemenu li").children(); // find the a children of the list items
+    var aArray = []; // create the empty aArray
+    for (var i=0; i < aChildren.length; i++) {    
+        var aChild = aChildren[i];
+        var ahref = $(aChild).attr('href');
+        aArray.push(ahref);
+    } // this for loop fills the aArray with attribute href values
 
-// $(document).ready(function(){
+    $(window).scroll(function(){
+        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+        var windowHeight = $(window).height(); // get the height of the window
+        var docHeight = $(document).height();
 
-//     function isScrolledIntoView(elem){
-//         var $elem = $(elem);
-//         var $window = $(window);
+        var theID = aArray[0];
+        var divPos = $(theID).offset().top;
+        var divHeight = $(theID).height();
+        if (windowPos >= 0 && windowPos < (divPos + divHeight - 200 )) {
+            $("a[href='#about']").parent().addClass("selected");
+            // console.log($("a[href='" + theID + "']"))
+            window.history.replaceState("state", "title", "#about");
+        } else {
+            $("a[href='#about']").parent().removeClass("selected");
+        }
 
-//         var docViewTop = $window.scrollTop();
-//         var docViewBottom = docViewTop + $window.height();
-
-//         var elemTop = $elem.offset().top;
-//         var elemBottom = elemTop + $elem.height();
-
-//         var returnElem = (elemBottom <= docViewBottom) && (elemTop >= docViewTop)
-
-//         console.log(returnElem)
-
-//         return (returnElem);
-//     }
-
-//     $(window).scroll(function() {
-//         if (isScrolledIntoView("#about"))           { window.history.replaceState("state", "title", "#about"); return; }
-//         if (isScrolledIntoView("#publications"))    { window.history.replaceState("state", "title", "#publications"); return; }
-//         if (isScrolledIntoView("#talks"))           { window.history.replaceState("state", "title", "#talks"); return; }
-//         if (isScrolledIntoView("#exhibitions"))     { window.history.replaceState("state", "title", "#exhibitions"); return; }
-//         if (isScrolledIntoView("#performances"))    { window.history.replaceState("state", "title", "#performances"); return; }
-//         if (isScrolledIntoView("#projects"))        { window.history.replaceState("state", "title", "#projects"); return; }
-//         if (isScrolledIntoView("#press"))           { window.history.replaceState("state", "title", "#press"); return; }
-//     });
-
-// });
+        for (var i=1; i < aArray.length; i++) {
+            var theID = aArray[i];
+            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+            var divHeight = $(theID).height(); // get the height of the div in question
+            if (windowPos >= divPos - 200 && windowPos < (divPos + divHeight - 200)) {
+                $("a[href='" + theID + "']").parent().addClass("selected");
+                window.history.replaceState("state", "title", "#" + theID);
+                // console.log($("a[href='" + theID + "']"))
+            } else {
+                $("a[href='" + theID + "']").parent().removeClass("selected");
+            }
+        }
+        if(windowPos + windowHeight > docHeight - 50) {
+            if (!$("a[href='#press']").parent().hasClass("selected")) {
+                // var navActiveCurrent = $(".selected").attr("href");
+                $("a[href='#projects']").parent().removeClass("selected");
+                console.log("HII")
+                // console.log($("#sidemenu li:nth-last-child(3)"))
+                // $("a[href='" + navActiveCurrent + "']").parent().removeClass("selected");
+                $("a[href='#press']").parent().addClass("selected");
+                window.history.replaceState("state", "title", "#" + theID);
+            }
+        }
+    });
+});

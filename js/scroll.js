@@ -55,7 +55,7 @@ $(document).ready(function(){
             var divHeight = $(theID).height(); // get the height of the div in question
             if (windowPos >= divPos - 200 && windowPos < (divPos + divHeight - 200)) {
                 $("a[href='" + theID + "']").parent().addClass("selected");
-                window.history.replaceState("state", "title", "#" + theID);
+                window.history.replaceState("state", "title", theID);
                 // console.log($("a[href='" + theID + "']"))
             } else {
                 $("a[href='" + theID + "']").parent().removeClass("selected");
@@ -65,11 +65,10 @@ $(document).ready(function(){
             if (!$("a[href='#press']").parent().hasClass("selected")) {
                 // var navActiveCurrent = $(".selected").attr("href");
                 $("a[href='#projects']").parent().removeClass("selected");
-                console.log("HII")
                 // console.log($("#sidemenu li:nth-last-child(3)"))
                 // $("a[href='" + navActiveCurrent + "']").parent().removeClass("selected");
                 $("a[href='#press']").parent().addClass("selected");
-                window.history.replaceState("state", "title", "#" + theID);
+                window.history.replaceState("state", "title", theID);
             }
         }
     });

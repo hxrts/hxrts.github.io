@@ -55,7 +55,6 @@ $(document).ready(function(){
                 if("#" + window.location.hash.substr(1)!=theID) {
                     window.history.replaceState("state", "title", theID);
                 }
-                window.history.replaceState("state", "title", theID);
             } else {
                 $("a[href='" + theID + "']").parent().removeClass("selected");
             }
@@ -65,9 +64,11 @@ $(document).ready(function(){
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
             }
-            if("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1]) {
-                window.history.replaceState("state", "title", theID);
-            }
+            // window.setInterval(function(){
+                if("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1]) {
+                    window.history.replaceState("state", "title", theID);
+                }
+            // }, 100);
         }
     });
 });

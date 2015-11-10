@@ -61,6 +61,7 @@ $(document).ready(function(){
                 $("#sidemenu li:last-child").addClass("selected");
                 console.log(window.location.hash.substr(1))
                 console.log(theID)
+                console.log("-------")
                 //if (window.location.href != 
                 window.history.replaceState("state", "title", theID);
             }

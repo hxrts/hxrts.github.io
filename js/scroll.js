@@ -59,12 +59,13 @@ $(document).ready(function(){
             if (!$("#sidemenu li:last-child").hasClass("selected")) {
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
-                console.log("#" + window.location.hash.substr(1))
-                console.log(theID)
-                console.log("-------")
-                //if (window.location.href != 
-                window.history.replaceState("state", "title", theID);
             }
+            console.log("#" + window.location.hash.substr(1))
+            console.log(theID)
+            console.log("#" + window.location.hash.substr(1)==theID)
+            console.log("-------")
+            //if (window.location.href != 
+            window.history.replaceState("state", "title", theID);
         }
     });
 });

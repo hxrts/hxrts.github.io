@@ -63,8 +63,25 @@ $(document).ready(function(){
             if (!$("#sidemenu li:last-child").hasClass("selected")) {
                 $("#sidemenu li:nth-last-child(3)").removeClass("selected");
                 $("#sidemenu li:last-child").addClass("selected");
-                if("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1]) {
-                    // window.history.replaceState("state", "title", theID);
-                }
+                // if("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1]) {
+                //     var running = false,
+                //     limit = 5,
+                //     current = 0;
+                //     if (running === true) {
+                //         running = false;
+                //         return false;
+                //     }
+                //     running = true;
+                //     var end = setInterval(function () {
+                //         if (current >= limit || running == false) {
+                //             running = false;
+                //             clearInterval(end);
+                //         }
+                //         window.history.replaceState("state", "title", theID);
+                //         current++;
+                //     }, 500);
+                // }
+            }
+        }
     });
 });

@@ -64,7 +64,7 @@ $(document).ready(function(){
             window.history.replaceState("state", "title", theID);
             console.log("#" + window.location.hash.substr(1))
             console.log(aArray[aArray.length - 1])
-            console.log("#" + window.location.hash.substr(1)== aArray[aArray.length - 1])
+            console.log("#" + window.location.hash.substr(1)!=aArray[aArray.length - 1])
             console.log("-------")
         }
     });

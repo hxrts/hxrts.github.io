@@ -260,6 +260,9 @@ a:hover {
 #txtbox {
   border:none;
   background:none;
+  font-family:'Quattrocento Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing:0.5px;
 }
 @media screen and (max-width: 700px) {
   #attrib {

@@ -258,6 +258,9 @@ a:hover {
   margin-right: 25px;
   margin-top: 15px;
 }
+#txtbox {
+  border:none;
+}
 @media screen and (max-width: 700px) {
   #attrib {
       display: inline-block;

@@ -94,7 +94,7 @@ a:hover {
   line-height: 96%;
 }
 .fa-key {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 96%;
 }
 .fa-github:hover {
@@ -347,6 +347,11 @@ a:hover {
   top: 0px;
 }
 #facebook:hover {
+}
+#key {
+  position: absolute;
+  left: 91px;
+  top: 0px;
 }
 #github {
   position: absolute;

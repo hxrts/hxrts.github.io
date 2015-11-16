@@ -93,8 +93,15 @@ a:hover {
   font-size: 1.2em;
   line-height: 96%;
 }
+.fa-key {
+  font-size: 1.2em;
+  line-height: 96%;
+}
 .fa-github:hover {
   color: #2aa198;
+}
+.fa-key:hover {
+  color: #666666;
 }
 .fa-paper-plane-o {
   font-size: 0.98em;

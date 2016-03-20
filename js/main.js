@@ -2,7 +2,7 @@ $('a').click(function(){
 
 	// scroll to the proper tag
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top+20
+        scrollTop: $( $(this).attr('href') ).offset().top
     }, 250);
 
     // logic for setting the current page

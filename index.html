@@ -119,13 +119,15 @@
 		<div id="bod">
 			<img class="cover_img" src="./images/graph.png">
 			<br>
-			<div class="section" id="about">	<!-- ########## HXRTS ########## -->
+			<div class="anchor" id="about"></div>	<!-- ########## HXRTS ########## -->
+			<div class="section">
 				<h2 class="nosub">ABOUT</h2>
 				<div>
 					<p>Sam Hart is a scientist, publisher, and artist whose work concentrates on the organization of complex systems and strategies advancing their ethical engagement. Sam works as a Bioinformatician at Sloan Kettering's <a href="https://www.mskcc.org/research-areas/labs/jorge-reis-filho" target="_blank" >Reis-Filho Lab</a>, where he investigates genetic and epigenetic mechanisms of cancer evolution. He is also Co-Founder and Editor-in-Chief of <a target="_blank" href="http://avant.org">AVANT.org</a>, an internet project space for critical interdisciplinarity.
 				</div>
 			</div>
-			<div class="section" id="current">	<!-- ########## CURRENT ########## -->
+			<div class="anchor" id="current"></div>	<!-- ########## CURRENT ########## -->
+			<div class="section">
 				<h2>CURRENT</h2>
 				<div>
 					<h3>Curation</h3>
@@ -151,7 +153,8 @@
 					<p>Presently working on serveral projects including the development of methods for cell lineage tracing in metastatic cancers, inference of causal gene networks conferring selective subtype advantage, and investigating mechanisms of exogenous viral integration with respect to the etiology of disregulatory cell programs.</p>
 				</div>
 			</div>
-			<div class="section" id="publications">	<!-- ########## PUBLICATIONS ########## -->
+			<div class="anchor" id="publications"></div>	<!-- ########## PUBLICATIONS ########## -->
+			<div class="section">
 				<h2>PUBLICATIONS</h2>
 				<div>
 					<h3>AVANT</h3>
@@ -176,7 +179,8 @@
 					<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/25423036" target="_blank">Sleeping Beauty mouse glioma models identify candidate glioma genes</a></p>
 				</div>
 			</div>
-			<div class="section" id="talks">	<!-- ########## Talks ########## -->
+			<div class="anchor" id="talks"></div>	<!-- ########## TALKS ########## -->
+			<div class="section">
 				<h2>TALKS</h2>
 				<h3>2015</h3>
 				<div>
@@ -197,7 +201,8 @@
 					<p><a target="_blank" href="http://www.ctm-festival.de/archive/festival-editions/ctm-2014-dis-continuity/transfer/workshops/">Anonymonth</a> - CTM - Creating a platform for pseudoanonymous exchange. In conversation with <a target="_blank" href="http://mathewdryhurst.com/">Mat Dryhurst</a> & <a target="_blank" href="http://olofmathe.com/">Olof Mathé</a>.</p>
 				</div>
 			</div>
-			<div class="section" id="exhibitions">	<!-- ########## EXHIBITIONS ########## -->
+			<div class="anchor" id="exhibitions"></div>	<!-- ########## EXHIBITIONS ########## -->
+			<div class="section">
 				<h2>EXHIBITIONS</h2>
 				<div>
 					<h3>2015</h3>
@@ -227,7 +232,8 @@
 				</div>
 				<br>
 			</div>
-			<div class="section" id="performances">	<!-- ########## Performances ########## -->
+			<span class="anchor" id="performances"></span>	<!-- ########## PERFORMANCES ########## -->
+			<div class="section">
 				<h2>PERFORMANCES</h2>
 				<div>
 					<h3>2013</h3>
@@ -262,7 +268,8 @@
 				</div>
 				<br>
 			</div>
-			<div class="section" id="projects">	<!-- ########## PROJECTS ########## -->
+			<span class="anchor" id="projects"></span>	<!-- ########## PROJECTS ########## -->
+			<div class="section">
 				<h2 class="nosub">PROJECTS</h2>
 				<div>
 					<p><a target="_blank" href="http://www.andfestival.org.uk/blog/life-on-film-by-stephen-fortune/">Life on Film</a> by Stephen Fortune at AND Festival (consult)</p>
@@ -277,7 +284,8 @@
 				</div>
 				<br>
 			</div>
-			<div class="section" id="press">	<!-- ########## PRESS ########## -->
+			<span class="anchor" id="press"></span>	<!-- ########## PRESS ########## -->
+			<div class="section">
 				<h2 class="nosub">PRESS</h2>
 				<div>
 					<a target="_blank" href="http://www.citylab.com/design/2015/11/the-fun-way-to-prepare-for-a-disaster/414256/?utm_source=SFTwitter
@@ -340,12 +348,19 @@
 			</div>
 
 		</div> <!-- ########## END BODY ########## -->
+		<script>
+		    $(document).bind('mobileinit',function(){
+		        $.mobile.changePage.defaults.changeHash = false;
+		        $.mobile.hashListeningEnabled = false;
+		        $.mobile.pushStateEnabled = false;
+		    });
+		</script> 
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js"></script>
 		<script type="text/javascript" src="slick/slick.js"></script>
 		<script type="text/javascript" src="slick/gal_params.js"></script>
-		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 
 	</body>
 </html>

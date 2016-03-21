@@ -73,12 +73,11 @@ a:hover {
   text-align:center;
 }
 .section {
-  margin: 20px 0px 20px 0px;
+  margin: 40px 0px 20px 0px;
 }
 .anchor{
   display: block;
-  height: 20px; /*same height as header*/
-  margin-top: -20px; /*same height as header*/
+  margin-top: px; /*same height as header*/
 }
 
 /* --------------------------------------- NAV --------------------------------------- */

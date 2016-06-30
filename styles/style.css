@@ -90,30 +90,33 @@ a:hover {
 .social-icon {
   color: black;
 }
+.el-icon-twitter {
+  font-size: 0.9em;
+}
 .el-icon-twitter:hover {
   color: #59adeb;
 }
 .el-icon-facebook:hover {
   color: #4964a1;
 }
-.fa-github {
-  font-size: 1.2em;
-  line-height: 96%;
-}
-.fa-key {
+.fa-code-fork {
   font-size: 1.1em;
   line-height: 96%;
 }
-.fa-github:hover {
+.fa-key {
+  font-size: 1em;
+  line-height: 96%;
+}
+.fa-code-fork:hover {
   color: #2aa198;
 }
 .fa-key:hover {
   color: #666666;
 }
-.fa-paper-plane-o {
-  font-size: 0.98em;
+.fa-reply {
+  font-size: 0.9em;
 }
-.fa-paper-plane-o:hover {
+.fa-reply:hover {
   color: #cb4b17;
 }
 .el-icon-link {
@@ -291,7 +294,7 @@ a:hover {
     text-align: center;
   }
 }
-#social_container_foot {
+#social-container-foot {
   padding-top: 55px;
   text-align: center;
   display: block;
@@ -332,48 +335,21 @@ a:hover {
 }
 
 /* --------------------------------------- SOCIAL --------------------------------------- */
-#social_container {
+#social-container {
   margin-left: 2px;
-  margin-top: 5px;
+  margin-top: 12px;
   position: relative;
 }
+
 .social {
   width: 13px;
   padding-left: 5px;
-}
-#twitter {
-  position: absolute;
-  left: 5px;
-  top: 0px;
-}
-#twitter:hover {
-}
-#facebook {
-  position: absolute;
-  left: 27px;
-  top: 0px;
-}
-#facebook:hover {
-}
-#key {
-  position: absolute;
-  left: 91px;
-  top: 0px;
-}
-#github {
-  position: absolute;
-  left: 50px;
-  top: 0px;
+  margin: 10px;
 }
 
-#github:hover {
-}
-#mail {
-  position: absolute;
-  left: 71px;
-  top: 0px;
-}
-#mail:hover {
+#twitter, #key, #github, #mail {
+  display: inline-block;
+  margin: 5px;
 }
 
 /* --------------------------------------- ELUSIVE --------------------------------------- */

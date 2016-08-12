@@ -58,7 +58,14 @@ a:hover {
   max-width: 650px;
   width:100%;
 }
+figure {
+  margin: 0;
+}
+figcaption {
+  color: #666;
+}
 .cover_img {
+  margin-top: 15px;
   max-width: 600px;
   width:100%;
 }

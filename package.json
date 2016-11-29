@@ -1,0 +1,13 @@
+{
+  "name": "hxrts",
+  "description": "hxrts.com",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jstransformer-coffee-script": "^1.1.0",
+    "jstransformer-markdown-it": "^2.0.0",
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.5"
+  }
+}

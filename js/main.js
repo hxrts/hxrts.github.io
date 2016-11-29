@@ -80,9 +80,10 @@ $(document).ready(function(){
 			commits = $.each(result, function(index, element) {});
 			date = commits[0]["commit"]["committer"]["date"];
 			formatdate = moment(date).format('MM.DD.YY');
-			document.getElementById("txtbox").value = "updated " + formatdate;
+			document.getElementById("date").value = "updated " + formatdate;
 		},
 		error: function() { console.log("error"); },
 	});
 
 });
+

@@ -1,0 +1,82 @@
+doctype html
+html
+
+	head
+
+		title Sam Hart
+
+		meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		meta(name="viewport" content="width=device-width initial-scale=1.0")
+
+		link(href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i&amp;subset=latin-ext" rel="stylesheet")
+
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://use.fontawesome.com/6b27e6b539.js")
+		script(src="https://momentjs.com/downloads/moment-with-locales.min.js")
+		script
+			include ../js/ga.js
+
+		style
+			include ../world.css
+
+	body
+		nav
+			ul.anchors
+				li: a(href="#information") ⸻ SAM HART
+				li: a(href="#laboratory") LABORATORY
+				li: a(href="#studio") STUDIO
+				li: a(href="Samuel_Hart_Berman_13.10.16.pdf") CV
+
+		main
+			figure
+				img#splash(src="images/house_in_the_sky.jpg")
+				figcaption
+					:markdown-it
+						Still from Sascha Pohflepp & Chris Woebken's mixed-reality film [*The House in The Sky*](http://pioneerworks.org/exhibitions/the-house-in-the-sky-sascha-pohflepp-chris-woebken/).
+
+
+			div.anchor#information
+				:markdown-it
+					Sam Hart is a scientist, publisher, and artist whose work addresses multivalent systems and their responsible engagement. Sam works as a Bioinformatician at Sloan Kettering working between cancer genomics and cellular engineering. He is also Founder and Editor of [Avant.org](http://avant.org/), an online artists' magazine for research and practice.
+
+			div.anchor#laboratory
+				h1 LABORATORY
+				:markdown-it
+					Current research in the laboratory of [Michel Sadelain](https://www.mskcc.org/research-areas/labs/michel-sadelain/overview) and the Center for Cell Engineering focuses on computational methods for developing chimeric antigen receptor immunotherapy.
+
+			div.anchor#studio
+				h1 STUDIO
+				:markdown-it
+					Sam is currently on the following projects independently and as part of Avant.org:
+
+					* *Handemade Computer* - Taeyoon Choi (editor)
+					* *In Search of Personalized Time* - E Roon Kang & Taeyoon Choi (editor)
+					* *00* - Lars Holdus (technical consultant & editor)
+					* *Affordance Opera* - David Kanaga
+					* *Supertemporal* - Danny Snelson
+					* (LISTEN) - Christine Sun Kim
+					* [Research Tactics](http://researchtactics.com/)
+
+
+		footer
+
+			ul.links
+				li: a.arena(href="https://www.are.na/sam-hart")
+					include ../images/arena.svg
+				li: a(href="http://twitter.com/hxrts"): i.fa.fa-twitter
+				li: a(href="http://github.com/hxrts"): i.fa.fa-code-fork
+				li: a(href="https://keybase.io/hxrts"): i.fa.fa-key
+				li: a(href="mailto:sam@hxrts.com?subject=message%20via%20hxrts.com"): i.fa.fa-reply
+				li: a(href="http://creativecommons.org/licenses/by-nc-nd/4.0/"): i.fa.fa-creative-commons
+
+
+			input#date(type="text" name="date" readonly="true")
+
+		tail
+			script(src="https://code.jquery.com/jquery-1.11.0.min.js")
+			script(src="https://code.jquery.com/jquery-migrate-1.2.1.min.js")
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js")
+			script
+				include ../js/mobile.js
+				include ../js/main.js

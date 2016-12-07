@@ -2,7 +2,7 @@
 // click function
 //---------------
 
-$('#sidemenu a').click(function(){
+$('#sidemenu.link a').click(function(){
 
 	// scroll to the proper tag
 	$('html, body').animate({

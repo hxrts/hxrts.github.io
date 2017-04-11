@@ -22,61 +22,58 @@ html
 			include ../world.css
 
 	body
-		nav#sidemenu
-			ul.anchors
-				li.link.selected: a#title(href="#information") SAM HART
-				li.link: a(href="#laboratory") LABORATORY
-				li.link: a(href="#studio") STUDIO
-				li: a(href="Samuel_Hart_Berman_CV.pdf") CV
+		nav
+			h1#title
+				span#dash ------ 
+				span#name  SAM HART
 
 		main
 			figure
 				img#splash(src="images/house_in_the_sky.jpg")
+
 				figcaption
 					:markdown-it
 						Still from Sascha Pohflepp & Chris Woebken's mixed-reality film [*The House in The Sky*](http://pioneerworks.org/exhibitions/the-house-in-the-sky-sascha-pohflepp-chris-woebken/).
 
-
 			div.anchor#information
 				:markdown-it
-					Sam Hart is a scientist, publisher, and artist living in New York. A bioinformatician at Sloan Kettering, he currently works between cancer genomics and cellular engineering. Sam is Founder and Editor-in-Chief of [Avant.org](http://avant.org/), an online artists' magazine for research and practice.
+					Sam Hart is a scientist, publisher, and artist living in New York. As a bioinformatician at Sloan Kettering, he currently works between cancer genomics and cellular engineering. Sam is also Founder and Editor-in-Chief of [Avant.org](http://avant.org/), an online artists' magazine for research and practice.
 
 			div.anchor#laboratory
-				h1 LABORATORY
+				h2 LABORATORY
 				:markdown-it
-					Full list of academic publications on [Google Scholar](https://scholar.google.com/citations?user=9Jhj4pwAAAAJ&hl=en).
+					[Google Scholar](https://scholar.google.com/citations?user=9Jhj4pwAAAAJ&hl=en) for full list of academic publications.
 
 					* Current work in the laboratory of [Dr, Michel Sadelain](https://www.mskcc.org/research-areas/labs/michel-sadelain/) and the Center for Cell Engineering focuses on computational methods for the development of targeted immunotherapies.
 					* Collaboration with [Dr. Nelson Moussazadeh](http://weillcornellbrainandspine.org/residents/nelson-moussazadeh-md) & [Dr. Cameron Brennan](https://www.mskcc.org/cancer-care/doctors/cameron-brennan) examining the evolutionary dynamics of metastatic kidney cancer.
 
 			div.anchor#studio
-				h1 STUDIO
+				h2 STUDIO
 				:markdown-it
 					Current editorial projects & collaborations include:
 
 					* [*(LISTEN)*](http://avant.org/event/listen/) - [Christine Sun Kim](http://christinesunkim.com/)
-					* [*Alternative Unknowns*](http://avant.org/project/alternative-unknowns/) - [Chris Woebken](http://chriswoebken.com/)
 					* *Handemade Computer* - [Taeyoon Choi](http://taeyoonchoi.com/)
-					* *In Search of Personalized Time* - [E Roon Kang](http://www.eroonkang.com/) & [Taeyoon Choi](http://taeyoonchoi.com/)
+					* *Invisible Systems* - [Nora Khan](https://noranahidkhan.com/)
 					* *Affordance Opera* - [David Kanaga](http://davidkanaga.com/)
+					* *Conference for Social Cybernetics* - with [Francis Tseng](https://frnsys.com/) & [Melanie Hoff](https://melanie-hoff.com/)
+					* *In Search of Personalized Time* - [E Roon Kang](http://www.eroonkang.com/) & [Taeyoon Choi](http://taeyoonchoi.com/)
 					* *00* - [Lars Holdus](http://www.larsholdhus.com/), released in collaboration with [PAN](http://p-a-n.org/)
 					* *Pink Slime Caeser Shift* - [Jen Liu](http://jenliu.info/)
-					* *Supertemporal* - [Danny Snelson](http://dss-edit.com/)
-					* *Power as Productive Pressure* - [Nora Khan](https://noranahidkhan.com/)
+					* *Supertemporal* - with [Danny Snelson](http://dss-edit.com/)
 					* *Agalinis Dreams* - [Miriam Simun](http://www.miriamsimun.com/)
 					* [Research Tactics](http://researchtactics.com/)
 
 		footer
-
 			ul.links
+				li: a(href="Samuel_Hart_Berman_CV.pdf"): i.fa.fa-file-text-o
+				li: a(href="mailto:sam@hxrts.com?subject=message%20via%20hxrts.com"): i.fa.fa-reply
+				li: a(href="http://github.com/hxrts"): i.fa.fa-code-fork
 				li: a.arena(href="https://www.are.na/sam-hart")
 					include ../images/arena.svg
 				li: a(href="http://twitter.com/hxrts"): i.fa.fa-twitter
-				li: a(href="http://github.com/hxrts"): i.fa.fa-code-fork
 				li: a(href="https://keybase.io/hxrts"): i.fa.fa-key
-				li: a(href="mailto:sam@hxrts.com?subject=message%20via%20hxrts.com"): i.fa.fa-reply
 				li: a(href="http://creativecommons.org/licenses/by-nc-nd/4.0/"): i.fa.fa-creative-commons
-
 
 			input#date(type="text" name="date" readonly="true")
 
@@ -86,5 +83,4 @@ html
 			script(src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js")
 			script
 				include ../js/mobile.js
-				include ../js/nav.js
 				include ../js/github.js

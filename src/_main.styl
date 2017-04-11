@@ -33,7 +33,7 @@ body
 	font-family: 'Quattrocento Sans', sans-serif
 	font-weight: 400
 	letter-spacing: 0.02em
-	line-height: 1.1em
+	line-height: 1.2em
 	margin: 0 15px 0 15px
 
 	em
@@ -56,31 +56,28 @@ body
 	// -- navigation
 
 
-	.anchors
-		position: fixed
-		top: 30px
-		left: 30px
+	nav
+		top: 10%
+		position: relative
+		left: calc(25% - 50px)
 
-		a
-			&:link,
-			&:visited,
-			&:active
-				box-shadow: none !important
-				color: #000
-				line-height: 1.5em
-				font-size: 17px
+		#title
+			color: white
+			//text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5)
 
-				&:hover
-					color: #000
-		#title:before
-				content: '–'
-				display:inline-block
-				margin: 0 1.1em 0 0.9em
-				-webkit-transform: scale(6,1.5)
-				-moz-transform: scale(6,1.5)
-				-ms-transform: scale(6,1.5)
-				-o-transform: scale(6,1,5)
-				transform: scale(6,1.5)
+			#dash
+				letter-spacing: -3px
+				margin-right: 5px
+
+			// &:before
+			// 	content: '–'
+			// 	display: inline-block
+			// 	margin: 0 1.1em 0 0.9em
+			// 	-webkit-transform: scale(6, 1.5)
+			// 	-moz-transform: scale(6, 1.5)
+			// 	-ms-transform: scale(6, 1.5)
+			// 	-o-transform: scale(6, 1.5)
+			// 	transform: scale(6, 1.5)
 
 
 	// -- main
@@ -96,32 +93,37 @@ body
 		display: block
 		min-height: calc(100% - 80px)
 
-
-		h1
-			font-size: 17px
-			letter-spacing: 1.5px
-			margin: 30px 0 20px 0
-			color: #000
-
-		p
-			font-size: 0.9rem
-
 		ul
 			margin: 1em 0 0 0
 
 			li
 				margin: 0.9em 0 0 2.2em
+				font-size: 14px
 
 				&:before
 					content: '–'
 					display:inline-block
 					margin-left: -1.3em
 					margin-right: 0.7em
-					-webkit-transform: scale(4,1)
-					-moz-transform: scale(4,1)
-					-ms-transform: scale(4,1)
-					-o-transform: scale(4,1)
-					transform: scale(4,1)
+					-webkit-transform: scale(4, 1)
+					-moz-transform: scale(4, 1)
+					-ms-transform: scale(4, 1)
+					-o-transform: scale(4, 1)
+					transform: scale(4, 1)
+
+	h1
+		font-size: 18px
+		letter-spacing: 0.02em
+		color: #000
+
+	h2
+		font-size: 17px
+		letter-spacing: 0.02em
+		margin: 30px 0 20px 0
+		color: #000
+
+	p
+		font-size: 14px
 
 
 	// -- figure
@@ -138,17 +140,18 @@ body
 				background: none
 
 		figcaption
-				margin: 10px 0 35px 0
+			margin: 10px 0 35px 0
 
-				p
-					color: #000
-					font-size: 13px
+			p
+				color: #000
+				font-size: 12px
+				text-align: right
 
-					a
-						&:link,
-						&:visited,
-						&:active
-							color: #000
+				a
+					&:link,
+					&:visited,
+					&:active
+						color: #000
 
 
 	// -- footer
@@ -192,7 +195,7 @@ body
 		text-align: center
 		display: block
 		margin: 25px auto
-		font-size: 13px
+		font-size: 12px
 		color: #000
 		letter-spacing: 0.02em
 		padding-bottom: 50px

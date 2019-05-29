@@ -1,21 +1,18 @@
 
 
-// -- selection
-
-
-.links,
-.anchors *,
-figcaption *,
-img,
-h1,
-input
-	&::selection
-		background: none !important
+h2::selection
+	background: none !important
 
 ::selection
 	background: #e4c8f7
 
-
+*,
+*:after,
+*:before
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	position: relative
 
 body
 	font-family: 'Quattrocento Sans', sans-serif
@@ -25,7 +22,18 @@ body
 	font-size: 14px
 
 main
-	margin: 90px 85px
+	margin: 80px 85px
+
+	div
+		display: inline-grid
+		text-align: left
+		height: 17em
+		
+	.narrow
+		width: 20em
+	
+	.wide
+		width: 35em
 
 	em
 		font-style: italic
@@ -46,14 +54,15 @@ main
 	h2
 		font-size: 18px
 		letter-spacing: 0.02em
-		margin: 60px 0 20px 0
 		color: #000
 	
 	p
 		font-size: 14px
 	
 	ul
-		margin: 1em 0 0 0
+		position: absolute
+		top: 0.5em
+		margin-top: 2em
 	
 		li
 			margin: 0.5em 0 0 0
@@ -65,3 +74,18 @@ main
 				margin-right: 0.65em
 				vertical-align: -5%
 	
+
+@media screen and (max-width: 1062px)
+	main
+		div
+			display: block
+			height: inherit
+			margin-bottom: 4.1em
+
+		h2
+			position: inherit
+
+		ul
+			position: initial
+			margin-top: 1.7em
+

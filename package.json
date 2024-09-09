@@ -6,7 +6,7 @@
   "dependencies": {
     "jstransformer-coffee-script": "^1.1.1",
     "jstransformer-markdown-it": "^2.1.0",
-    "pug": "^2.0.0-beta6",
+    "pug": "^2.0.4",
     "pug-cli": "^1.0.0-alpha6",
     "stylus": "^0.54.5"
   }
